@@ -1,5 +1,3 @@
-// alert('hello')
-
 // Javascript for navigation bar effects on scroll
 window.addEventListener("scroll", function () {
   const header = document.querySelector("header");
@@ -25,14 +23,14 @@ navigationItems.forEach((navigationItem) => {
 });
 
 
-// Javascript for scroll to top button
+// Javascript for scrolling to the top button
 const scrollBtn = document.querySelector(".scrollToTop-btn");
 
 window.addEventListener("scroll", function(){
   scrollBtn.classList.toggle("active", window.scrollY > 500);
 });
 
-// Javascript for scroll back to top on click scroll-to-top button
+// Javascript for scrolling back to the top on click scroll-to-top button
 scrollBtn.addEventListener("click", () => {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
@@ -40,9 +38,8 @@ scrollBtn.addEventListener("click", () => {
 
 
 
-// Javascript for reveal website elements on scroll
+// Javascript for revealing website elements on the scroll
 window.addEventListener("scroll", reveal);
-
 function reveal(){
   var reveals = document.querySelectorAll(".reveal");
 
